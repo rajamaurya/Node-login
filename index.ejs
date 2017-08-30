@@ -1,0 +1,94 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="CSS/index_Css.css">
+
+<script type="text/javascript" href="app.js"></script>
+<script type="text/javascript" href="UserDashboardController.js"></script>
+<script type="text/javascript" href="sign_up.js"></script>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../AgiCss.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style type="text/css">
+	
+div#imgDiv {
+	width: 400px;
+	height: 200px;
+	background:#FAF;
+	margin-left: 60px;
+	margin-top: 30px;
+}
+
+</style>
+
+	<title>Node Application</title>
+</head>
+<body>
+			
+
+		 <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <div class="navbar-brand">Shared Services</div>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <div class="navbar-btn"><a href="#" class="btn btn-default">Home</a></div>
+          </li>
+          <li>
+            <div class="navbar-btn"><a href="#" class="btn btn-default">Projects</a></div>
+          </li>
+          <li>
+            <div id="btn-donate" class="navbar-btn btn btn-default">About</div>
+          </li>
+          <li>
+            <div class="navbar-btn"><a href="#" class="btn btn-default">&copy; RKM</a></div>
+          </li>
+          <li>
+            <div id="btn-logout1"class="navbar-btn btn btn-default">Gallery</div>
+          </li>
+          <li><div style="width: 10px;"></div></li>
+          <li>
+            <div id="btn-logout" class="navbar-btn btn btn-primary">Sign Out</div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <center>
+    <div class="container">
+    <div class=".col=sm-4">
+<div id="login" class="col-sm-4" style="top: 100pt; margin-left: 300pt">
+      <form name="_form" id="form-login" method="post" action="/dashboard" class="well">
+        
+        <h6>Please Login To Your Account</h6>
+        <div class="form-group">
+          <label>Username</label>
+          <input type="text" id="user-tf" name="username" class="form-control">
+        </div>
+        <div class="form-group">
+          <label>Password</label>
+          <input type="password" id="pass-tf" name="userpass" class="form-control">
+        </div>
+        <div class="controls">
+          <button type="button" class="btn btn-default button-rememember-me"><span class="glyphicon glyphicon-unchecked button-rememember-me-glyph"></span>Remember Me</button>
+          <button type="submit" class="btn btn-primary button-sign-in" onsubmit="javascript:loginValidation()"><span class="glyphicon glyphicon-lock"></span>Sign In</button>
+        </div>
+        <div class="clearfix"></div>
+        <hr>
+        <div class="btm-links">
+          <div id="forgot-password"><a href="#">Forgot Your Password?</a></div>
+          <div id="create-account"><a href="/signup">Create An Account</a></div>
+        </div>
+        
+      </form>
+    </div>
+ </div>
+ </div>
+</body>
+</html>
